@@ -1,24 +1,67 @@
-.App {
-  text-align: center;
+/*
+Colors
+
+@white: #ffffff;
+@very-light-gray: #e0e0e0;
+@very-dark-gray: #222222;
+@green: #008B00;
+@beige: #f5f5dc;
+
+
+Media Query Breakpoints
+
+@screen-xs-max: 767px;
+@screen-sm-min: 768px;
+@screen-sm-max: 991px;
+@screen-md-min: 992px;
+@screen-md-max: 1199px;;
+@screen-lg-min: 1200px;
+*/
+
+.jumbotron {
+  height: 100vh;
+  margin-bottom: 0;
+  background-color: #222222;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@media (min-width: 991px) {
+  .jumbotron {
+    background: no-repeat url('./images/hmc_dartmouth_entrance.jpg');
+    background-size: cover;
+  }
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+  .jumbotron .container {
+    /* Veritcally center contents */
+    height: 100%;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.App-intro {
-  font-size: large;
-}
+    /* Style contents */
+    color: #ffffff;
+    text-align: center;
+  }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+    .jumbotron .container h1 {
+      margin-bottom: 0;
+    }
+    .jumbotron .container  p {
+      margin-top: 0;
+    }
+    .jumbotron .container  hr {
+      width: 175px;
+    }
+
+    @media (min-width: 768px) {
+      .jumbotron .container h1 {
+        font-size: 72px;
+      }
+      .jumbotron .container  p {
+        font-size: 24px;
+      }
+      .jumbotron .container  hr {
+        width: 350px;
+      }
+    }
