@@ -30,7 +30,6 @@ Media Query Breakpoints
   linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
   background-size: 70px 120px;
 }
-
 @media (min-width: 991px) {
   .jumbotron {
     background: no-repeat url('./images/hmc_dartmouth_entrance.jpg');
@@ -61,7 +60,6 @@ Media Query Breakpoints
     .jumbotron .container  hr {
       width: 175px;
     }
-
     @media (min-width: 768px) {
       .jumbotron .container h1 {
         font-size: 72px;
@@ -74,7 +72,7 @@ Media Query Breakpoints
       }
     }
 
-  .scroll-down {
+  .jumbotron .scroll-down {
     position: absolute;
     bottom: 0;
     height: 80px;
@@ -83,7 +81,6 @@ Media Query Breakpoints
     background-color: #222222;
     border-top: solid 1px #e0e0e0;
   }
-
   @media (min-width: 768px) {
     .jumbotron .scroll-down {
       right: 5%;
@@ -116,3 +113,27 @@ Media Query Breakpoints
           padding-top: 24px;
         }
       }
+
+/* Container modification for all the scroll modules */
+.container.scroll-module h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #008B00;
+}
+@media (min-width: 768px) {
+  /* Create spacing for right rail navigation */
+  .container.scroll-module {
+    padding: 50px 160px;
+  }
+
+  /* Spacing and styling for header module */
+  .container.scroll-module hr {
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+
+  .container.scroll-module h2 {
+    margin-top: 0;
+    font-size: 48px;
+  }
+}

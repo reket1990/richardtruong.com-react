@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Grid, Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Grid } from 'react-bootstrap';
 import './App.css';
+import Profile from './modules/Profile';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <span className="glyphicon glyphicon-chevron-down"></span>
           </a>
         </Jumbotron>
+        <Profile />
       </div>
     );
   }
