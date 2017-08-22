@@ -22,12 +22,20 @@ Media Query Breakpoints
   height: 100vh;
   margin-bottom: 0;
   background-color: #222222;
+
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
 }
 
 @media (min-width: 991px) {
   .jumbotron {
     background: no-repeat url('./images/hmc_dartmouth_entrance.jpg');
     background-size: cover;
+    opacity: 0.9;
   }
 }
 
@@ -65,3 +73,46 @@ Media Query Breakpoints
         width: 350px;
       }
     }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: #222222;
+    border-top: solid 1px #e0e0e0;
+  }
+
+  @media (min-width: 768px) {
+    .jumbotron .scroll-down {
+      right: 5%;
+      width: 110px;
+      border-top: none;
+    }
+  }
+
+    .jumbotron .scroll-down .glyphicon {
+      padding-top: 25px;
+      left: 2px;
+      font-size: 30px;
+      color: #ffffff;
+
+      /* animation */
+      animation-name: wiggle;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+      @keyframes wiggle {
+        0% {
+          padding-top: 24px;
+        }
+        50% {
+          padding-top: 30px;
+        }
+        100% {
+          padding-top: 24px;
+        }
+      }
