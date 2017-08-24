@@ -1,0 +1,31 @@
+#contact {
+  background-color: #222222;
+}
+
+  #contact h2 {
+    color: #e0e0e0;
+  }
+
+  #contact hr {
+    border-color: #505050;
+  }
+
+  #contact a {
+    display: block;
+    line-height: 36px;
+    margin-bottom: 20px;
+    color: #808080;
+  }
+    #contact a:hover {
+      color: #B0B0B0;
+    }
+    #contact a span {
+      float: left;
+      margin-right: 20px;
+      font-size: 36px;
+    }
+
+  #contact .footer-line {
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }

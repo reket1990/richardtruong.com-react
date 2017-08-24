@@ -12,9 +12,7 @@ class Profile extends Component {
     return (
       <div id="profile">
         <Grid className="scroll-module">
-          <Row className="text-center">
-            <h2 className="text-center">Profile</h2>
-          </Row>
+          <h2 className="text-center">Profile</h2>
           <Row>
             <Col md={4}>
               <h3>About me</h3>

@@ -3,6 +3,7 @@ import { Jumbotron, Grid } from 'react-bootstrap';
 import './App.css';
 import Profile from './modules/Profile';
 import Experiences from './modules/Experiences';
+import Contact from './modules/Contact';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         </Jumbotron>
         <Profile />
         <Experiences />
+        <Contact />
       </div>
     );
   }

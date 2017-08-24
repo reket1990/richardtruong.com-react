@@ -55,18 +55,14 @@ class Experiences extends Component {
           <h2 className="text-center">Experiences</h2>
           <hr />
           <h3>Education</h3>
-          <div>
-            {educations.map(education =>
-              <Experience entry={education} />
-            )}
-          </div>
+          {educations.map(education =>
+            <Experience entry={education} />
+          )}
           <hr />
           <h3>Careers</h3>
-          <div>
-            {careers.map(career =>
-              <Experience entry={career} />
-            )}
-          </div>
+          {careers.map(career =>
+            <Experience entry={career} />
+          )}
         </Grid>
       </div>
     );

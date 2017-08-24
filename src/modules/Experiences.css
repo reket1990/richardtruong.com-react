@@ -1,12 +1,15 @@
 #experiences {
   background-color: #e0e0e0;
 }
+
   #experiences hr {
     border-color: #B0B0B0;
   }
+
   #experiences h3 {
     color: #008B00;
   }
+
   #experiences .experience {
     margin-bottom: 40px;
   }
