@@ -1,14 +1,14 @@
-#Footer {
+#footer {
   background-color: #222222;
   color: #B0B0B0;
   padding: 50px 0;
 }
 
-  #Footer a {
+  #footer a {
     line-height: 24px;
   }
 
-    #Footer a span {
+    #footer a span {
       float: left;
       margin-right: 10px;
       font-size: 24px;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Grid } from 'react-bootstrap';
 import './App.css';
+// import Navigation from './modules/Navigation';
 import Profile from './modules/Profile';
 import Experiences from './modules/Experiences';
 import Contact from './modules/Contact';
@@ -20,6 +21,7 @@ class App extends Component {
             <span className="glyphicon glyphicon-chevron-down" />
           </a>
         </Jumbotron>
+        {/* <Navigation /> */}
         <Profile />
         <Experiences />
         <Contact />

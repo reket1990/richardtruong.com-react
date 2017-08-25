@@ -16,13 +16,14 @@ Media Query Breakpoints
 @screen-sm-min: 768px;
 @screen-sm-max: 991px;
 @screen-md-min: 992px;
-@screen-md-max: 1199px;;
+@screen-md-max: 1199px;
 @screen-lg-min: 1200px;
 */
 
 .jumbotron {
   height: 100vh;
   margin-bottom: 0;
+  opacity: 0.9;
 
   background-color: #222222;
   background-image:
@@ -36,7 +37,6 @@ Media Query Breakpoints
   .jumbotron {
     background: no-repeat url('./images/hmc_dartmouth_entrance.jpg');
     background-size: cover;
-    opacity: 0.9;
     border-bottom: 1px solid #e0e0e0;
   }
 }
