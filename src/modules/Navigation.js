@@ -4,6 +4,17 @@ import './Navigation.css';
 
 require('smoothscroll-polyfill').polyfill();
 
+var tabs = [{
+  id: "profile",
+  text: "Profile"
+}, {
+  id: "experiences",
+  text: "Experiences"
+}, {
+  id: "contact",
+  text: "Contact"
+}];
+
 window.onscroll = function() {
   // Check to see if nav is fixed
   var fixedHeight = window.innerHeight;
@@ -18,39 +29,40 @@ window.onscroll = function() {
   }
 
   // Check to see which tab is active
-  var active = 0;
-  var tabs = ['experiences', 'contact'];
+  var active = -1;
 
-  tabs.forEach(function(tab) {
+  for (var i = 0; i < tabs.length; i++) {
     var modifier = 0;
     if (window.innerWidth < 768) {
       modifier = 50;  // Compensate for nav bar
     }
 
-    if (window.pageYOffset >= document.getElementById(tab).offsetTop - modifier) {
+    if (window.pageYOffset >= document.getElementById(tabs[i].id).offsetTop - modifier) {
       active++;
     }
-  });
+  }
 
   // Check if bottom
   if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
     active++;
   }
+  if (active === -1) { active = 0 }  // Highlight first tab to start
+  if (active === tabs.length) { active -= 1 }  // Double counted last tab
 
   // Set active tab
-  tabs = document.getElementById('navigation').getElementsByTagName("li");
-  for (var i = 0; i < tabs.length; i++) {
+  var tabElements = document.getElementById('navigation').getElementsByTagName("li");
+  for (i = 0; i < tabElements.length; i++) {
     // Remove active
-    tabs[i].classList.remove("active");
+    tabElements[i].classList.remove("active");
   }
   // Add active
-  if (active == tabs.length) { active = tabs.length-1 }  // Double counted last tab
-  tabs[active].classList.add("active");
+  tabElements[active].classList.add("active");
 };
 
 
-function smoothScroll(selector) {
-  var scrollHeight = document.getElementById(selector).offsetTop;
+export function smoothScroll(tabId) {
+  console.log(tabId);
+  var scrollHeight = document.getElementById(tabId).offsetTop;
   if (window.innerWidth < 768) {
     scrollHeight -= 50;  // Compensate for nav bar
   }
@@ -73,9 +85,9 @@ class Navigation extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav onSelect={smoothScroll}>
-              <NavItem eventKey={'profile'}>Profile</NavItem>
-              <NavItem eventKey={'experiences'}>Experiences</NavItem>
-              <NavItem eventKey={'contact'}>Contact</NavItem>
+              {tabs.map(tab =>
+                <NavItem eventKey={tab.id}>{tab.text}</NavItem>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

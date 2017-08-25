@@ -22,6 +22,7 @@
     text-align: center;
     padding: 20px 0;
     font-weight: 600;
+    border-top: solid 1px #505050;
   }
 
   .navbar .nav .active a,
