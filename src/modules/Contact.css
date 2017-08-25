@@ -25,12 +25,12 @@
       font-size: 36px;
     }
 
-  #contact .footer-line {
+  /* Reduce the spacing on top by the spacing from the <p> */
+  #contact .bottom-line {
     margin-top: 0;
-    margin-bottom: 200px;
   }
   @media (min-width: 768px) {
-    #contact .footer-line {
+    #contact .bottom-line {
       margin-top: 20px;
     }
   }

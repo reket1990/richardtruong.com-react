@@ -21,7 +21,7 @@ class Contact extends Component {
               </a>
             </Col>
           </Row>
-          <hr className="footer-line" />
+          <hr className="bottom-line" />
         </Grid>
       </div>
     );

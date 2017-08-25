@@ -4,6 +4,7 @@ import './App.css';
 import Profile from './modules/Profile';
 import Experiences from './modules/Experiences';
 import Contact from './modules/Contact';
+import Footer from './modules/Footer';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <Profile />
         <Experiences />
         <Contact />
+        <Footer />
       </div>
     );
   }
