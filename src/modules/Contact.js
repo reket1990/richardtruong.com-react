@@ -11,8 +11,8 @@ class Contact extends Component {
           <hr />
           <Row>
             <Col lg={6}>
-              <a href="https://www.linkedin.com/in/richard-truong-2723b99a/" target="_blank" rel="noopener noreferrer">
-                <span className="fa fa-linkedin-square" /> https://www.linkedin.com/in/richard-truong-2723b99a/
+              <a href="https://www.linkedin.com/in/richard-truong/" target="_blank" rel="noopener noreferrer">
+                <span className="fa fa-linkedin-square" /> www.linkedin.com/in/richard-truong
               </a>
             </Col>
             <Col lg={6}>

@@ -13,7 +13,7 @@ class App extends Component {
           <Grid>
             <h1>Richard Truong</h1>
             <hr />
-            <p>Typer Text</p>
+            <p>Interactive Resume</p>
           </Grid>
           <a href="#profile" className="scroll-down">
             <span className="glyphicon glyphicon-chevron-down" />

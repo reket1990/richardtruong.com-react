@@ -13,6 +13,7 @@ class Profile extends Component {
       <div id="profile">
         <Grid className="scroll-module">
           <h2 className="text-center">Profile</h2>
+          <hr />
           <Row>
             <Col md={4}>
               <h3>About me</h3>

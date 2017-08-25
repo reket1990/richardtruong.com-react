@@ -26,6 +26,11 @@
     }
 
   #contact .footer-line {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 200px;
+  }
+  @media (min-width: 768px) {
+    #contact .footer-line {
+      margin-top: 20px;
+    }
   }

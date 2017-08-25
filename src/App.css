@@ -119,14 +119,15 @@ Media Query Breakpoints
 
 /* Container modification for all the scroll modules */
 .container.scroll-module h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
   color: #008B00;
+}
+.container.scroll-module hr {
+  border-top: 1px solid #B0B0B0;
 }
 @media (min-width: 768px) {
   /* Create spacing for right rail navigation */
   .container.scroll-module {
-    padding: 50px 160px;
+    padding: 50px 140px;
   }
 
   /* Spacing and styling for header module */
@@ -136,7 +137,6 @@ Media Query Breakpoints
   }
 
   .container.scroll-module h2 {
-    margin-top: 0;
     font-size: 48px;
   }
 }
