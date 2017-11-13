@@ -17,8 +17,15 @@ class Profile extends Component {
           <Row>
             <Col md={4}>
               <h3>About me</h3>
-              <p>Early career software engineer getting things done one line of code at a time. Passionate about algorithms and building scalable applications. Able to multitask and complete tasks quickly with strong attention to detail.</p>
-              <p>Broad technical skill set but always enthusiastic about learning. Currently most experienced in Python, PHP and JavaScript.</p>
+              <p>
+                Early career software engineer getting things done one line of code at a time.
+                Passionate about algorithms and building scalable applications.
+                Able to multitask and complete tasks quickly with strong attention to detail.
+              </p>
+              <p>
+                Broad technical skill set but always enthusiastic about learning.
+                Currently most experienced in Python, PHP and JavaScript.
+              </p>
             </Col>
             <Col md={4} className="text-center">
               <img src={profilePic} alt="Richard Truong" />

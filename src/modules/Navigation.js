@@ -15,7 +15,7 @@ const tabs = [{
   text: 'Contact',
 }];
 
-window.onscroll = function () {
+window.onscroll = function updateNav() {
   // Check to see if nav is fixed
   let fixedHeight = window.innerHeight;
   if (window.innerWidth >= 768) {
@@ -31,7 +31,7 @@ window.onscroll = function () {
   // Check to see which tab is active
   let active = -1;
 
-  for (var i = 0; i < tabs.length; i += 1) {
+  for (let i = 0; i < tabs.length; i += 1) {
     let modifier = 0;
     if (window.innerWidth < 768) {
       modifier = 50; // Compensate for nav bar
@@ -51,7 +51,7 @@ window.onscroll = function () {
 
   // Set active tab
   const tabElements = document.getElementById('navigation').getElementsByTagName('li');
-  for (i = 0; i < tabElements.length; i += 1) {
+  for (let i = 0; i < tabElements.length; i += 1) {
     // Remove active
     tabElements[i].classList.remove('active');
   }
