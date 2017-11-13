@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 
 class Experience extends Component {
   render() {
-    var entry = this.props.entry;
+    const entry = this.props.entry;
 
     return (
       <Row className="experience">

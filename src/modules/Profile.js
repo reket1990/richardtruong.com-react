@@ -4,8 +4,8 @@ import './Profile.css';
 import profilePic from '../images/richard_truong.jpg';
 
 // Calculate age
-var ageMS = Date.now() - new Date('08/23/1990').getTime();
-var age = new Date(ageMS).getUTCFullYear() - 1970;
+const ageMS = Date.now() - new Date('08/23/1990').getTime();
+const age = new Date(ageMS).getUTCFullYear() - 1970;
 
 class Profile extends Component {
   render() {

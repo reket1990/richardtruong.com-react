@@ -4,73 +4,72 @@ import './Navigation.css';
 
 require('smoothscroll-polyfill').polyfill();
 
-var tabs = [{
-  id: "profile",
-  text: "Profile"
+const tabs = [{
+  id: 'profile',
+  text: 'Profile',
 }, {
-  id: "experiences",
-  text: "Experiences"
+  id: 'experiences',
+  text: 'Experiences',
 }, {
-  id: "contact",
-  text: "Contact"
+  id: 'contact',
+  text: 'Contact',
 }];
 
-window.onscroll = function() {
+window.onscroll = function () {
   // Check to see if nav is fixed
-  var fixedHeight = window.innerHeight;
+  let fixedHeight = window.innerHeight;
   if (window.innerWidth >= 768) {
-    fixedHeight = window.innerHeight - 60;  // Nav becomes fixed earlier
+    fixedHeight = window.innerHeight - 60; // Nav becomes fixed earlier
   }
 
   if (window.pageYOffset > fixedHeight) {
-    document.getElementsByClassName("navbar")[0].classList.add("fixed");
-  }  else {
-    document.getElementsByClassName("navbar")[0].classList.remove("fixed");
+    document.getElementsByClassName('navbar')[0].classList.add('fixed');
+  } else {
+    document.getElementsByClassName('navbar')[0].classList.remove('fixed');
   }
 
   // Check to see which tab is active
-  var active = -1;
+  let active = -1;
 
-  for (var i = 0; i < tabs.length; i++) {
-    var modifier = 0;
+  for (var i = 0; i < tabs.length; i += 1) {
+    let modifier = 0;
     if (window.innerWidth < 768) {
-      modifier = 50;  // Compensate for nav bar
+      modifier = 50; // Compensate for nav bar
     }
 
     if (window.pageYOffset >= document.getElementById(tabs[i].id).offsetTop - modifier) {
-      active++;
+      active += 1;
     }
   }
 
   // Check if bottom
   if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-    active++;
+    active += 1;
   }
-  if (active === -1) { active = 0 }  // Highlight first tab to start
-  if (active === tabs.length) { active -= 1 }  // Double counted last tab
+  if (active === -1) { active = 0; } // Highlight first tab to start
+  if (active === tabs.length) { active -= 1; } // Double counted last tab
 
   // Set active tab
-  var tabElements = document.getElementById('navigation').getElementsByTagName("li");
-  for (i = 0; i < tabElements.length; i++) {
+  const tabElements = document.getElementById('navigation').getElementsByTagName('li');
+  for (i = 0; i < tabElements.length; i += 1) {
     // Remove active
-    tabElements[i].classList.remove("active");
+    tabElements[i].classList.remove('active');
   }
   // Add active
-  tabElements[active].classList.add("active");
+  tabElements[active].classList.add('active');
 };
 
 
 export function smoothScroll(tabId) {
-  console.log(tabId);
-  var scrollHeight = document.getElementById(tabId).offsetTop;
+  let scrollHeight = document.getElementById(tabId).offsetTop;
   if (window.innerWidth < 768) {
-    scrollHeight -= 50;  // Compensate for nav bar
+    scrollHeight -= 50; // Compensate for nav bar
   }
 
   window.scroll({
     top: scrollHeight,
     left: 0,
-    behavior: 'smooth'
+    behavior: 'smooth',
   });
 }
 
@@ -86,8 +85,7 @@ class Navigation extends Component {
           <Navbar.Collapse>
             <Nav onSelect={smoothScroll}>
               {tabs.map(tab =>
-                <NavItem eventKey={tab.id}>{tab.text}</NavItem>
-              )}
+                <NavItem eventKey={tab.id}>{tab.text}</NavItem>)}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
