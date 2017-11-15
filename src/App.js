@@ -21,9 +21,9 @@ class App extends Component {
             <hr />
             <p>Interactive Resume</p>
           </Grid>
-          <a onClick={scrollDown} className="scroll-down">
+          <button onClick={scrollDown} className="scroll-down">
             <span className="glyphicon glyphicon-chevron-down" />
-          </a>
+          </button>
         </Jumbotron>
         <Navigation />
         <Profile />

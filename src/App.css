@@ -82,6 +82,7 @@ Media Query Breakpoints
     width: 100%;
     text-align: center;
     background-color: #222222;
+    border: none;
     border-top: solid 1px #e0e0e0;
   }
   @media (min-width: 768px) {
@@ -94,7 +95,6 @@ Media Query Breakpoints
   }
 
     .jumbotron .scroll-down .glyphicon {
-      padding-top: 25px;
       left: 2px;
       font-size: 30px;
       color: #ffffff;
@@ -108,13 +108,13 @@ Media Query Breakpoints
     }
       @keyframes wiggle {
         0% {
-          padding-top: 24px;
+          padding-top: 5px;
         }
         50% {
-          padding-top: 30px;
+          padding-top: 10px;
         }
         100% {
-          padding-top: 24px;
+          padding-top: 5px;
         }
       }
 

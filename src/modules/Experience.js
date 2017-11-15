@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Row, Col } from 'react-bootstrap';
 
 class Experience extends Component {
   render() {
-    const entry = this.props.entry;
+    const { entry } = this.props;
 
     return (
       <Row className="experience">
@@ -22,5 +23,16 @@ class Experience extends Component {
     );
   }
 }
+
+Experience.propTypes = {
+  entry: PropTypes.shape({
+    name: PropTypes.string,
+    start_date: PropTypes.string,
+    end_date: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    location: PropTypes.string,
+  }).isRequired,
+};
 
 export default Experience;

@@ -56,11 +56,11 @@ class Experiences extends Component {
           <hr />
           <h3>Education</h3>
           {educations.map(education =>
-            <Experience entry={education} />)}
+            <Experience key={`education-${education.name}`} entry={education} />)}
           <hr />
           <h3>Careers</h3>
           {careers.map(career =>
-            <Experience entry={career} />)}
+            <Experience key={`career-${career.name}`} entry={career} />)}
         </Grid>
       </div>
     );

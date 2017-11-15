@@ -85,7 +85,7 @@ class Navigation extends Component {
           <Navbar.Collapse>
             <Nav onSelect={smoothScroll}>
               {tabs.map(tab =>
-                <NavItem eventKey={tab.id}>{tab.text}</NavItem>)}
+                <NavItem key={`tab-${tab.id}`} eventKey={tab.id}>{tab.text}</NavItem>)}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
