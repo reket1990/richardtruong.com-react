@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import './Navigation.css';
 
@@ -59,7 +59,6 @@ window.onscroll = function updateNav() {
   tabElements[active].classList.add('active');
 };
 
-
 export function smoothScroll(tabId) {
   let scrollHeight = document.getElementById(tabId).offsetTop;
   if (window.innerWidth < 768) {
@@ -73,25 +72,20 @@ export function smoothScroll(tabId) {
   });
 }
 
-
-class Navigation extends Component {
-  render() {
-    return (
-      <div id="navigation">
-        <Navbar inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav onSelect={smoothScroll}>
-              {tabs.map(tab =>
-                <NavItem key={`tab-${tab.id}`} eventKey={tab.id}>{tab.text}</NavItem>)}
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
-    );
-  }
-}
+const Navigation = () => (
+  <div id="navigation">
+    <Navbar inverse collapseOnSelect>
+      <Navbar.Header>
+        <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+        <Nav onSelect={smoothScroll}>
+          {tabs.map(tab =>
+            <NavItem key={`tab-${tab.id}`} eventKey={tab.id}>{tab.text}</NavItem>)}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  </div>
+);
 
 export default Navigation;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid } from 'react-bootstrap';
 import './Experiences.css';
 import Experience from './Experience';
@@ -47,24 +47,20 @@ const careers = [{
   location: 'Aliso Viejo, CA',
 }];
 
-class Experiences extends Component {
-  render() {
-    return (
-      <div id="experiences">
-        <Grid className="scroll-module">
-          <h2 className="text-center">Experiences</h2>
-          <hr />
-          <h3>Education</h3>
-          {educations.map(education =>
-            <Experience key={`education-${education.name}`} entry={education} />)}
-          <hr />
-          <h3>Careers</h3>
-          {careers.map(career =>
-            <Experience key={`career-${career.name}`} entry={career} />)}
-        </Grid>
-      </div>
-    );
-  }
-}
+const Experiences = () => (
+  <div id="experiences">
+    <Grid className="scroll-module">
+      <h2 className="text-center">Experiences</h2>
+      <hr />
+      <h3>Education</h3>
+      {educations.map(education =>
+        <Experience key={`education-${education.name}`} entry={education} />)}
+      <hr />
+      <h3>Careers</h3>
+      {careers.map(career =>
+        <Experience key={`career-${career.name}`} entry={career} />)}
+    </Grid>
+  </div>
+);
 
 export default Experiences;
