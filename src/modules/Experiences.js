@@ -11,6 +11,7 @@ const educations = [{
   title: 'Bachelor of Science',
   description: 'Computer Science and Mathematics (Joint Major)',
   location: 'Claremont, CA',
+  website: 'https://www.hmc.edu',
 }];
 
 const careers = [{
@@ -23,9 +24,10 @@ const careers = [{
     '• Developed product search services for the Zendaya App and integrated search with Shopify webhooks (Python, Elasticsearch, AWS Lambda, API Gateway)\n' +
     '• Built a wrapper for HLS VOD player, Ooyala player, and custom Firebase based livestream player for simpler video integration in both web and mobile for the Zendaya App (JavaScript, Swift, Firebase)',
   location: 'West Hollywood, CA',
+  website: 'http://www.whalerockindustries.com',
 },
 {
-  name: 'Demand Media',
+  name: 'Demand Media (now Leaf Group)',
   start_date: 'September 2014',
   end_date: 'May 2016',
   title: 'Senior Fullstack Software Engineer',
@@ -34,6 +36,7 @@ const careers = [{
     '• Gathered and processed large sets of page view data for ehow.com (Python, Hadoop)\n' +
     '• Developed a faceted search for techwalla.com (Elasticsearch, Python, JavaScript/MithrilJS)',
   location: 'Santa Monica, CA',
+  website: 'https://www.leafgroup.com',
 },
 {
   name: '2Advanced Studios / Bad Juju Games',
@@ -45,6 +48,7 @@ const careers = [{
     '• Implemented and maintained server backend and its functions for Tekken Tag Tournament 2, Ace Combat, Flip Riders and other games (Python, Redis, Cassandra)\n' +
     '• Created backend services for Designer Con 2012 App (PHP, MySQL)',
   location: 'Aliso Viejo, CA',
+  website: 'http://www.badjuju.com',
 }];
 
 const Experiences = () => (

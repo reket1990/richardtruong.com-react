@@ -11,12 +11,36 @@
   }
 
   #experiences .experience {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
     #experiences .experience .description {
       white-space: pre-line;
     }
 
-    #experiences .experience .location {
+    #experiences .experience .details {
       color: #008B00;
     }
+
+      #experiences .experience .details .detail {
+        display: block;
+        margin-bottom: 5px;
+      }
+      @media (min-width: 768px) {
+        #experiences .experience .details .detail {
+          display: inline-block;
+        }
+      }
+
+      #experiences .experience .details .divider {
+        display: none;
+      }
+      @media (min-width: 768px) {
+        #experiences .experience .details .divider {
+          display: inline-block;
+          color: #000000;
+          margin: 0 10px;
+          vertical-align: 2px;
+        }
+      }
+
+

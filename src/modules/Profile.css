@@ -1,9 +1,6 @@
 #profile .container {
   margin-bottom: 30px;
 }
-@media (min-width: 768px) {
-  margin-bottom: 0;
-}
 
   #profile .container img {
     margin-top: 20px;

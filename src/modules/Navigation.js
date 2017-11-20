@@ -76,6 +76,7 @@ const Navigation = () => (
   <div id="navigation">
     <Navbar inverse collapseOnSelect>
       <Navbar.Header>
+        <div className="header-text">Richard Truong</div>
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>

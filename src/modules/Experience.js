@@ -11,8 +11,14 @@ const Experience = ({ entry }) => (
     <Col md={8}>
       <p><strong>{entry.title}</strong></p>
       <p className="description">{entry.description}</p>
-      <div className="location">
-        <span className="glyphicon glyphicon-map-marker" /> {entry.location}
+      <div className="details">
+        <span className="detail">
+          <span className="glyphicon glyphicon-map-marker" /> {entry.location}
+        </span>
+        <span className="divider">|</span>
+        <span className="detail">
+          <span className="glyphicon glyphicon-link" /> {entry.website}
+        </span>
       </div>
     </Col>
   </Row>
@@ -26,6 +32,7 @@ Experience.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     location: PropTypes.string,
+    website: PropTypes.string,
   }).isRequired,
 };
 
