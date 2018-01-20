@@ -15,6 +15,15 @@ const educations = [{
 }];
 
 const careers = [{
+  name: 'Honey',
+  start_date: 'October 2017',
+  end_date: 'Present',
+  title: 'Software Engineer III',
+  description: '',
+  location: 'Los Angeles, CA',
+  website: 'http://www.joinhoney.com',
+},
+{
   name: 'Whalerock Industries',
   start_date: 'May 2016',
   end_date: 'Present',
@@ -32,7 +41,7 @@ const careers = [{
   end_date: 'May 2016',
   title: 'Senior Fullstack Software Engineer',
   description:
-    '• Constructed new features for and maintained ehow.com including converting to a responsive website, building new templates and SEO (PHP, JavaScript, HTML, CSS/LESS, MongoDB, Bootstrap)\n' +
+    '• Constructed new features for and maintained ehow.com including converting to a responsive website, building new templates and SEO (PHP/Kohana, JavaScript, HTML, CSS/LESS, MongoDB, Bootstrap)\n' +
     '• Gathered and processed large sets of page view data for ehow.com (Python, Hadoop)\n' +
     '• Developed a faceted search for techwalla.com (Elasticsearch, Python, JavaScript/MithrilJS)',
   location: 'Santa Monica, CA',

@@ -22,7 +22,7 @@ const Profile = () => (
           </p>
           <p>
             Broad technical skill set but always enthusiastic about learning.
-            Currently most experienced in Python, PHP and JavaScript.
+            Currently most experienced in Python and JavaScript.
           </p>
         </Col>
         <Col md={4} className="text-center">
