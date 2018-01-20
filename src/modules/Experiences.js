@@ -1,7 +1,8 @@
 import React from 'react';
 import { Grid } from 'react-bootstrap';
 import './Experiences.css';
-import Experience from './Experience';
+import Quote from './submodules/Quote';
+import Experience from './submodules/Experience';
 
 // TODO: Make admin tool to modify experiences
 const educations = [{
@@ -64,6 +65,12 @@ const Experiences = () => (
   <div id="experiences">
     <Grid className="scroll-module">
       <h2 className="text-center">Experiences</h2>
+      <Quote
+        quote="Try something new, only to prove that it's not the right choice, and you'll be amazed at the people you meet, the way your perspectives change and ultimately what your ambitions and dreams become." // eslint-disable-line max-len
+        author="Casually Explained"
+        media="10 Pieces of Life Advice"
+        style={{ maxWidth: '600px' }}
+      />
       <hr />
       <h3>Education</h3>
       {educations.map(education =>

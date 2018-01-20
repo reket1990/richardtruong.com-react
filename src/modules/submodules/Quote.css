@@ -1,0 +1,14 @@
+.quote-container {
+  color: #808080;
+  font-size: 18px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.quote {
+  margin-top: 20px;
+}
+
+.source {
+  margin-top: 10px;
+}

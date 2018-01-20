@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './Profile.css';
+import Quote from './submodules/Quote';
 import profilePic from '../images/richard_truong.jpg';
 
 // Calculate age
@@ -11,6 +12,10 @@ const Profile = () => (
   <div id="profile">
     <Grid className="scroll-module">
       <h2 className="text-center">Profile</h2>
+      <Quote
+        quote="The person that you will spend the most time with in life is yourself, so it's best to try to make yourself as interesting as possible." // eslint-disable-line max-len
+        style={{ maxWidth: '600px' }}
+      />
       <hr />
       <Row>
         <Col md={4}>
