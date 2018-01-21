@@ -1,0 +1,4 @@
+{
+    "ignore": "adjoining-classes,box-model,ids,qualified-headings,unique-headings",
+    "exclude-list": "build,node_modules"
+}

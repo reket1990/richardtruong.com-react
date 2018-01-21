@@ -41,15 +41,12 @@ Media Query Breakpoints
 }
 
   .jumbotron .container {
-    /* Veritcally center contents */
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     padding-bottom: 80px;
-
-    /* Style contents */
-    color: #ffffff;
     text-align: center;
   }
 
@@ -94,10 +91,10 @@ Media Query Breakpoints
   }
 
     .jumbotron .scroll-down .glyphicon {
-      animation-name: wiggle;
       animation-direction: normal;
       animation-duration: 1s;
       animation-iteration-count: infinite;
+      animation-name: wiggle;
       animation-timing-function: linear;
       color: #ffffff;
       font-size: 30px;
@@ -128,13 +125,13 @@ Media Query Breakpoints
     padding: 50px 165px;
   }
 
-  /* Spacing and styling for header module */
-  .container.scroll-module hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+    /* Spacing and styling for header module */
+    .container.scroll-module hr {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
 
-  .container.scroll-module h2 {
-    font-size: 48px;
-  }
+    .container.scroll-module h2 {
+      font-size: 48px;
+    }
 }
