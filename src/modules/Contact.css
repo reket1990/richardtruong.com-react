@@ -11,18 +11,18 @@
   }
 
   #contact a {
+    color: #808080;
     display: block;
     line-height: 36px;
     margin-bottom: 20px;
-    color: #808080;
   }
     #contact a:hover {
-      color: #B0B0B0;
+      color: #b0b0b0;
     }
     #contact a span {
       float: left;
-      margin-right: 20px;
       font-size: 36px;
+      margin-right: 20px;
     }
 
   /* Reduce the spacing on top by the spacing from the <p> */

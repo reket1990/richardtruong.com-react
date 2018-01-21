@@ -3,11 +3,11 @@
 }
 
   #experiences hr {
-    border-color: #B0B0B0;
+    border-color: #b0b0b0;
   }
 
   #experiences h3 {
-    color: #008B00;
+    color: #008b00;
   }
 
   #experiences .experience {
@@ -18,7 +18,7 @@
     }
 
     #experiences .experience .details {
-      color: #008B00;
+      color: #008b00;
     }
 
       #experiences .experience .details .detail {
@@ -36,15 +36,15 @@
       }
       @media (min-width: 768px) {
         #experiences .experience .details .divider {
-          display: inline-block;
           color: #000000;
+          display: inline-block;
           margin: 0 10px;
           vertical-align: 2px;
         }
       }
 
     #experiences .experience .link {
-      color: #008B00;
+      color: #008b00;
       margin-left: 5px;
     }
 

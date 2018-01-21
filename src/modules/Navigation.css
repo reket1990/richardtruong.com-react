@@ -3,10 +3,10 @@
 }
 
 .navbar {
+  border: 0;
   position: absolute;
   top: 100%;
   width: 100%;
-  border: 0;
   z-index: 999;
 }
 
@@ -15,11 +15,11 @@
   }
 
     .navbar .navbar-header .header-text {
-      display: inline-block;
-      margin-left: 20px;
-      line-height: 50px;
-      font-size: 18px;
       color: #ffffff;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 50px;
+      margin-left: 20px;
     }
     @media (min-width: 768px) {
       .navbar .navbar-header .header-text {
@@ -28,7 +28,7 @@
     }
 
   .navbar .navbar-toggle {
-    border-color: #B0B0B0;
+    border-color: #b0b0b0;
   }
 
   .navbar .nav {
@@ -42,17 +42,17 @@
 
 
     .navbar .nav li a {
-      text-align: center;
-      padding: 20px 0;
-      font-weight: 600;
       border-top: solid 1px #505050;
+      font-weight: 600;
+      padding: 20px 0;
+      text-align: center;
     }
 
     .navbar .nav .active a,
     .navbar .nav .active a:hover,
     .navbar .nav .active a:focus {
+      background-color: #008b00;
       background-image: none;
-      background-color: #008B00;
     }
 
 .navbar.fixed {
@@ -81,10 +81,10 @@
     }
 
     .navbar .nav li a {
+      display: block;
       height: 80px;
       padding-top: 30px;
       width: 110px;
-      display: block;
     }
 
   .navbar.fixed {

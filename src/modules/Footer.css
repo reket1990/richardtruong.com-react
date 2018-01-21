@@ -1,6 +1,6 @@
 #footer {
   background-color: #222222;
-  color: #B0B0B0;
+  color: #b0b0b0;
   padding: 50px 0;
 }
 
@@ -10,6 +10,6 @@
 
     #footer a span {
       float: left;
-      margin-right: 10px;
       font-size: 24px;
+      margin-right: 10px;
     }

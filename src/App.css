@@ -3,11 +3,11 @@ Colors
 
 @white: #ffffff;
 @very-light-gray: #e0e0e0;
-@light-gray: #B0B0B0;
+@light-gray: #b0b0b0;
 @gray: #808080;
 @dark-gray: #505050;
 @very-dark-gray: #222222;
-@green: #008B00;
+@green: #008b00;
 
 
 Media Query Breakpoints
@@ -21,17 +21,16 @@ Media Query Breakpoints
 */
 
 .jumbotron {
+  background-color: #222222;
+  background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
   height: 100vh;
   margin-bottom: 0;
   opacity: 0.9;
-
-  background-color: #222222;
-  background-image:
-  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-  background-size: 70px 120px;
 }
 @media (min-width: 991px) {
   .jumbotron {
@@ -43,11 +42,11 @@ Media Query Breakpoints
 
   .jumbotron .container {
     /* Veritcally center contents */
-    height: 100%;
-    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: center;
+    padding-bottom: 80px;
 
     /* Style contents */
     color: #ffffff;
@@ -76,35 +75,33 @@ Media Query Breakpoints
     }
 
   .jumbotron .scroll-down {
-    position: absolute;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
-    text-align: center;
     background-color: #222222;
     border: none;
     border-top: solid 1px #e0e0e0;
+    bottom: 0;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
   }
   @media (min-width: 768px) {
     .jumbotron .scroll-down {
-      right: 5%;
-      width: 110px;
       border: solid 1px #505050;
       border-bottom: none;
+      right: 5%;
+      width: 110px;
     }
   }
 
     .jumbotron .scroll-down .glyphicon {
-      left: 2px;
-      font-size: 30px;
-      color: #ffffff;
-
-      /* animation */
       animation-name: wiggle;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
       animation-direction: normal;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      color: #ffffff;
+      font-size: 30px;
+      left: 2px;
     }
       @keyframes wiggle {
         0% {
@@ -120,10 +117,10 @@ Media Query Breakpoints
 
 /* Container modification for all the scroll modules */
 .container.scroll-module h2 {
-  color: #008B00;
+  color: #008b00;
 }
 .container.scroll-module hr {
-  border-top: 1px solid #B0B0B0;
+  border-top: 1px solid #b0b0b0;
 }
 @media (min-width: 768px) {
   /* Create spacing for right rail navigation */
@@ -133,8 +130,8 @@ Media Query Breakpoints
 
   /* Spacing and styling for header module */
   .container.scroll-module hr {
-      margin-top: 40px;
-      margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .container.scroll-module h2 {
