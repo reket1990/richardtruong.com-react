@@ -1,3 +1,15 @@
+# RichardTruong.com
+
+Richard Truong's personal website and interactive resume.
+
+[http://www.richardtruong.com](http://www.richardtruong.com)
+
+
+---
+
+
+# Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
