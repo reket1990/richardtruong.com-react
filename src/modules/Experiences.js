@@ -22,7 +22,7 @@ const careers = [{
   title: 'Software Engineer III',
   description: '',
   location: 'Los Angeles, CA',
-  website: 'http://www.joinhoney.com',
+  website: 'https://www.joinhoney.com',
 },
 {
   name: 'Whalerock Industries',
