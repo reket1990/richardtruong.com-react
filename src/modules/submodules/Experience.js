@@ -18,7 +18,7 @@ const Experience = ({ entry }) => (
         <span className="divider">|</span>
         <span className="detail">
           <span className="glyphicon glyphicon-link" />
-          <a href="{entry.website}" target="_blank" className="link">{entry.website}</a>
+          <a href={entry.website} target="_blank" className="link">{entry.website}</a>
         </span>
       </div>
     </Col>

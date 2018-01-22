@@ -43,9 +43,20 @@
 
     .navbar .nav li a {
       border-top: solid 1px #505050;
-      font-weight: 600;
+      color: #b0b0b0;
+      font-weight: 500;
       padding: 20px 0;
       text-align: center;
+    }
+    .navbar .nav li a:focus {
+      color: #b0b0b0;
+    }
+    .navbar .nav li:first-child a {
+      border-radius: 4px 4px 0 0;
+      border-top: none;
+    }
+    .navbar .nav li:last-child a {
+      border-radius: 0 0 4px 4px;
     }
 
     .navbar .nav .active a,
@@ -53,6 +64,8 @@
     .navbar .nav .active a:focus {
       background-color: #008b00;
       background-image: none;
+      color: #ffffff;
+      font-weight: 600;
     }
 
 .navbar.fixed {

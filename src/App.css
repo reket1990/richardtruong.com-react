@@ -36,7 +36,6 @@ Media Query Breakpoints
   .jumbotron {
     background: no-repeat url('./images/hmc_dartmouth_entrance.jpg');
     background-size: cover;
-    border-bottom: 1px solid #e0e0e0;
   }
 }
 
