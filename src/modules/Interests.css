@@ -1,0 +1,22 @@
+#interests {
+  margin-bottom: 20px;
+}
+
+.interest-image-container {
+  margin: 30px auto 0;
+  max-width:250px;
+  position: relative;
+  text-align: center;
+  width: 95%;
+}
+  .interest-image {
+    width: 100%;
+  }
+  .interest-image-background {
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }

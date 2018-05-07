@@ -4,6 +4,7 @@ import './App.css';
 import Navigation, { smoothScroll } from './modules/Navigation';
 import Profile from './modules/Profile';
 import Experiences from './modules/Experiences';
+import Interests from './modules/Interests';
 import Contact from './modules/Contact';
 import Footer from './modules/Footer';
 
@@ -26,6 +27,7 @@ const App = () => (
     <Navigation />
     <Profile />
     <Experiences />
+    <Interests />
     <Contact />
     <Footer />
   </div>

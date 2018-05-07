@@ -53,7 +53,6 @@
     }
     .navbar .nav li:first-child a {
       border-radius: 4px 4px 0 0;
-      border-top: none;
     }
     .navbar .nav li:last-child a {
       border-radius: 0 0 4px 4px;

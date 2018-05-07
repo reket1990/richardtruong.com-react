@@ -73,12 +73,10 @@ const Experiences = () => (
       />
       <hr />
       <h3>Education</h3>
-      {educations.map(education =>
-        <Experience key={`education-${education.name}`} entry={education} />)}
+      {educations.map(education => <Experience key={`education-${education.name}`} entry={education} />)}
       <hr />
       <h3>Careers</h3>
-      {careers.map(career =>
-        <Experience key={`career-${career.name}`} entry={career} />)}
+      {careers.map(career => <Experience key={`career-${career.name}`} entry={career} />)}
     </Grid>
   </div>
 );
