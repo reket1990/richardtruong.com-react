@@ -11,25 +11,25 @@ import pingPongPic from '../images/ping-pong.png';
 // TODO: Make admin tool to modify interests
 const interests = [{
   name: 'Algorithms',
-  description: 'I love solving problems and optimizing. It\'s beautiful that there are so many ways to approach a problem, and depending on the solution the performance is highly variable. There is an amazing satisfaction when a good algorithm works!',
+  description: 'I love solving problems and optimizing. It\'s beautiful that there are so many ways to approach a problem, and depending on the solution, the performance is highly variable. There is an amazing satisfaction when a good algorithm works!',
   image: algoPic,
   style: { backgroundColor: 'orange' },
 },
 {
   name: 'Video Games',
-  description: 'Games encompass some of my favorite atributes for a pastime: fun, competitive, interactive, challenging, fair. Some of my favorite video games are Super Smash Bros Melee, Starcraft: Brood War, League of Legends, Ocarina of Time and Mega Man X2.',
+  description: 'Games encompass some of my favorite attributes for a pastime: fun, competitive, interactive, challenging, fair. Some of my favorite video games are Super Smash Bros. Melee, Starcraft: Brood War, League of Legends, Ocarina of Time and Mega Man X2.',
   image: gamesPic,
   style: { backgroundColor: 'yellowgreen' },
 },
 {
   name: 'Cardistry and Magic',
-  description: 'Being blown away with unbelievable feats and wonder is one of the best feelings in the world. I love being able to share this feeling and the beauty of magic and cardistry. My current favorite deck of cards is the FW17 Virtuoso Deck.',
+  description: 'Being blown away with unbelievable feats and wonder is one of the best feelings in the world. I love being able to share this feeling through the beauty of cardistry and magic. My current favorite deck of cards is the FW17 Virtuoso Deck.',
   image: cardsPic,
   style: { backgroundColor: 'black' },
 },
 {
   name: 'Ping Pong',
-  description: 'Everyone needs a little bit of exercise in their life. I love the simplicity of ping pong, along with its approachable easy to learn, hard to master attribute. Some of my other favorite sports to play are Tennis and Sabre Fencing.',
+  description: 'Everyone needs a little bit of exercise in their life. I love the simplicity of ping pong, along with its approachable and easy to learn, hard to master attribute. Some of my other favorite sports to play are Tennis and Sabre Fencing.',
   image: pingPongPic,
   style: { backgroundColor: 'lightskyblue' },
 }];
