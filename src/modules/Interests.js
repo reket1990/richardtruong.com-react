@@ -16,7 +16,7 @@ const interests = [{
   style: { backgroundColor: 'orange' },
 },
 {
-  name: 'Video Games',
+  name: 'Games',
   description: 'Games encompass some of my favorite attributes for a pastime: fun, competitive, interactive, challenging, fair. Some of my favorite video games are Super Smash Bros. Melee, Starcraft: Brood War, League of Legends, Ocarina of Time and Mega Man X2.',
   image: gamesPic,
   style: { backgroundColor: 'yellowgreen' },
@@ -25,7 +25,7 @@ const interests = [{
   name: 'Cardistry and Magic',
   description: 'Being blown away with unbelievable feats and wonder is one of the best feelings in the world. I love being able to share this feeling through the beauty of cardistry and magic. My current favorite deck of cards is the FW17 Virtuoso Deck.',
   image: cardsPic,
-  style: { backgroundColor: 'black' },
+  style: { backgroundColor: '#666' },
 },
 {
   name: 'Ping Pong',
@@ -49,7 +49,7 @@ const Interests = () => (
         interestNum += 1;
         if (interestNum % 2) {
           return (
-            <Row key={`interest-${interest.name}`}>
+            <Row key={`interest-${interest.name}`} className="interest-row">
               <Col sm={4} md={3}>
                 <div className="interest-image-container">
                   <img className="interest-image" src={interest.image} alt="{interest.name}" />
@@ -65,8 +65,8 @@ const Interests = () => (
         }
         // else
         return (
-          <Row key={`interest-${interest.name}`}>
-            <Col className="visible-xs-block">
+          <Row key={`interest-${interest.name}`} className="interest-row">
+            <Col sm={4} md={3} className="visible-xs-block">
               <div className="interest-image-container">
                 <img className="interest-image" src={interest.image} alt="{interest.name}" />
                 <div className="interest-image-background" style={interest.style} />

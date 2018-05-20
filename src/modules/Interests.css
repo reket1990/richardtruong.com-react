@@ -2,8 +2,15 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .interest-row {
+    align-items: center;
+    display: flex;
+  }
+}
+
 .interest-image-container {
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   max-width:250px;
   position: relative;
   text-align: center;
