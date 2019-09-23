@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './Profile.css';
 import Quote from './submodules/Quote';
-import profilePic from '../images/richard_truong.jpg';
+import profilePic from '../images/richard_truong.png';
 
 // Calculate age
 const ageMS = Date.now() - new Date('08/23/1990').getTime();
@@ -14,7 +14,7 @@ const Profile = () => (
       <h2 className="text-center">Profile</h2>
       <Quote
         quote="The person that you will spend the most time with in life is yourself, so it's best to try to make yourself as interesting as possible." // eslint-disable-line max-len
-        style={{ maxWidth: '600px' }}
+        author="unknown"
       />
       <hr />
       <Row>

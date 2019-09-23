@@ -27,7 +27,7 @@ const careers = [{
 {
   name: 'Whalerock Industries',
   start_date: 'May 2016',
-  end_date: 'Present',
+  end_date: 'April 2017',
   title: 'Senior Software Engineer',
   description:
     '• Created serverless backend microservices for video livestreaming, recording and viewer statistics for the Kardashian Apps (Python, AWS Lambda, API Gateway, Kinesis, SNS, DynamoDB)\n' +
@@ -69,7 +69,6 @@ const Experiences = () => (
         quote="Try something new, only to prove that it's not the right choice, and you'll be amazed at the people you meet, the way your perspectives change and ultimately what your ambitions and dreams become." // eslint-disable-line max-len
         author="Casually Explained"
         media="10 Pieces of Life Advice"
-        style={{ maxWidth: '600px' }}
       />
       <hr />
       <h3>Education</h3>
