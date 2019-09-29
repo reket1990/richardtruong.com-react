@@ -14,6 +14,9 @@ const tabs = [{
   id: 'interests',
   text: 'Interests',
 }, {
+  id: 'skills',
+  text: 'Skills',
+}, {
   id: 'contact',
   text: 'Contact',
 }];
