@@ -14,9 +14,9 @@ const Pay = () => (
           </a>
         </Col>
         <Col lg={6}>
-          <a className="link" href="https://venmo.com/Richard-D-Truong" target="_blank" rel="noopener noreferrer">
+          <span className="link">
             <span className="fa fa-vimeo-square" /> Venmo: @Richard-D-Truong
-          </a>
+          </span>
         </Col>
         <Col lg={6}>
           <span className="link">
