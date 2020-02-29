@@ -34,7 +34,7 @@ Media Query Breakpoints
 }
 @media (min-width: 991px) {
   .jumbotron {
-    background: no-repeat url('./images/hmc_dartmouth_entrance.jpg');
+    background: no-repeat url('../images/hmc_dartmouth_entrance.jpg');
     background-size: cover;
   }
 }

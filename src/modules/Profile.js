@@ -14,7 +14,6 @@ const Profile = () => (
       <h2 className="text-center">Profile</h2>
       <Quote
         quote="The person that you will spend the most time with in life is yourself, so it's best to try to make yourself as interesting as possible." // eslint-disable-line max-len
-        author="unknown"
       />
       <hr />
       <Row>

@@ -5,7 +5,7 @@ import Quote from './submodules/Quote';
 import SkillPair from './submodules/SkillPair';
 
 const programmingLanguages = [{
-  name: 'JavaScript',
+  name: 'JavaScript/ReactJS',
   value: 5,
 }, {
   name: 'HTML/CSS',
