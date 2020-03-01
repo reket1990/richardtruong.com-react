@@ -3,9 +3,9 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import './Interests.css';
 import Quote from './submodules/Quote';
 // Images for interests
-import algoPic from '../images/algorithm.png';
+import algoPic from '../images/algorithm.webp';
 import gamesPic from '../images/gamecube-controller.png';
-import cardsPic from '../images/cards.png';
+import cardsPic from '../images/cards.webp';
 import pingPongPic from '../images/ping-pong.png';
 
 // TODO: Make admin tool to modify interests

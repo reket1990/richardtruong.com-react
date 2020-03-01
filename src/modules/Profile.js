@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './Profile.css';
 import Quote from './submodules/Quote';
-import profilePic from '../images/richard_truong.png';
+import profilePic from '../images/richard_truong.webp';
 
 // Calculate age
 const ageMS = Date.now() - new Date('08/23/1990').getTime();
