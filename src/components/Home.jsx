@@ -13,26 +13,28 @@ function scrollDown() {
   smoothScroll('profile');
 }
 
-const Home = () => (
-  <div>
-    <Jumbotron>
-      <Grid>
-        <h1>Richard Truong</h1>
-        <hr />
-        <p>Interactive Resume</p>
-      </Grid>
-      <button onClick={scrollDown} className="scroll-down">
-        <span className="glyphicon glyphicon-chevron-down" />
-      </button>
-    </Jumbotron>
-    <Navigation />
-    <Profile />
-    <Experiences />
-    <Interests />
-    <Skills />
-    <Contact />
-    <Footer />
-  </div>
-);
+function Home() {
+  return (
+    <div>
+      <Jumbotron>
+        <Grid>
+          <h1>Richard Truong</h1>
+          <hr />
+          <p>Interactive Resume</p>
+        </Grid>
+        <button onClick={scrollDown} className="scroll-down">
+          <span className="glyphicon glyphicon-chevron-down" />
+        </button>
+      </Jumbotron>
+      <Navigation />
+      <Profile />
+      <Experiences />
+      <Interests />
+      <Skills />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
 
 export default Home;

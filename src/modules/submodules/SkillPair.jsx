@@ -16,35 +16,41 @@ const generateStars = (name, value) => {
   return output;
 };
 
-const Skill = ({ entry1, entry2 }) => (
-  <Row>
-    <Col xs={8} md={4}>
-      <h4>{entry1.name}</h4>
-    </Col>
-    { typeof entry1.value === 'number' ?
-      <Col xs={4} md={2} className="value">
-        { generateStars(entry1.name, entry1.value) }
+function Skill({ entry1, entry2 }) {
+  return (
+    <Row>
+      <Col xs={8} md={4}>
+        <h4>{entry1.name}</h4>
       </Col>
-      :
-      <Col xs={4} md={2} className="value">
-        { entry1.value }
-      </Col>
-    }
+      { typeof entry1.value === 'number'
+        ? (
+          <Col xs={4} md={2} className="value">
+            { generateStars(entry1.name, entry1.value) }
+          </Col>
+        )
+        : (
+          <Col xs={4} md={2} className="value">
+            { entry1.value }
+          </Col>
+        )}
 
-    <Col xs={8} md={4}>
-      <h4>{entry2.name}</h4>
-    </Col>
-    { typeof entry2.value === 'number' ?
-      <Col xs={4} md={2} className="value">
-        { generateStars(entry2.name, entry2.value) }
+      <Col xs={8} md={4}>
+        <h4>{entry2.name}</h4>
       </Col>
-      :
-      <Col xs={4} md={2} className="value">
-        { entry2.value }
-      </Col>
-    }
-  </Row>
-);
+      { typeof entry2.value === 'number'
+        ? (
+          <Col xs={4} md={2} className="value">
+            { generateStars(entry2.name, entry2.value) }
+          </Col>
+        )
+        : (
+          <Col xs={4} md={2} className="value">
+            { entry2.value }
+          </Col>
+        )}
+    </Row>
+  );
+}
 
 Skill.propTypes = {
   entry1: PropTypes.shape({

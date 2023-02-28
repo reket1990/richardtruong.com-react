@@ -36,21 +36,38 @@ const interests = [{
 
 let interestNum = 0;
 
-const Interests = () => (
-  <div id="interests">
-    <Grid className="scroll-module">
-      <h2 className="text-center">Interests</h2>
-      <Quote
-        quote="Time you enjoy wasting is not wasted time."
-        author="John Lennon"
-      />
-      <hr />
-      {interests.map((interest) => {
-        interestNum += 1;
-        if (interestNum % 2) {
+function Interests() {
+  return (
+    <div id="interests">
+      <Grid className="scroll-module">
+        <h2 className="text-center">Interests</h2>
+        <Quote
+          quote="Time you enjoy wasting is not wasted time."
+          author="John Lennon"
+        />
+        <hr />
+        {interests.map((interest) => {
+          interestNum += 1;
+          if (interestNum % 2) {
+            return (
+              <Row key={`interest-${interest.name}`} className="interest-row">
+                <Col sm={4} md={3}>
+                  <div className="interest-image-container">
+                    <img className="interest-image" src={interest.image} alt="{interest.name}" />
+                    <div className="interest-image-background" style={interest.style} />
+                  </div>
+                </Col>
+                <Col sm={8} md={9}>
+                  <h3>{ interest.name }</h3>
+                  <p>{ interest.description }</p>
+                </Col>
+              </Row>
+            );
+          }
+          // else
           return (
             <Row key={`interest-${interest.name}`} className="interest-row">
-              <Col sm={4} md={3}>
+              <Col sm={4} md={3} className="visible-xs-block">
                 <div className="interest-image-container">
                   <img className="interest-image" src={interest.image} alt="{interest.name}" />
                   <div className="interest-image-background" style={interest.style} />
@@ -60,33 +77,18 @@ const Interests = () => (
                 <h3>{ interest.name }</h3>
                 <p>{ interest.description }</p>
               </Col>
+              <Col sm={4} md={3} className="hidden-xs">
+                <div className="interest-image-container">
+                  <img className="interest-image" src={interest.image} alt="{interest.name}" />
+                  <div className="interest-image-background" style={interest.style} />
+                </div>
+              </Col>
             </Row>
           );
-        }
-        // else
-        return (
-          <Row key={`interest-${interest.name}`} className="interest-row">
-            <Col sm={4} md={3} className="visible-xs-block">
-              <div className="interest-image-container">
-                <img className="interest-image" src={interest.image} alt="{interest.name}" />
-                <div className="interest-image-background" style={interest.style} />
-              </div>
-            </Col>
-            <Col sm={8} md={9}>
-              <h3>{ interest.name }</h3>
-              <p>{ interest.description }</p>
-            </Col>
-            <Col sm={4} md={3} className="hidden-xs">
-              <div className="interest-image-container">
-                <img className="interest-image" src={interest.image} alt="{interest.name}" />
-                <div className="interest-image-background" style={interest.style} />
-              </div>
-            </Col>
-          </Row>
-        );
-      })}
-    </Grid>
-  </div>
-);
+        })}
+      </Grid>
+    </div>
+  );
+}
 
 export default Interests;

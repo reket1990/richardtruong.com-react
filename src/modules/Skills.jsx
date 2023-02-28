@@ -86,25 +86,27 @@ const programmingLanguagePairs = groupPairs(programmingLanguages);
 const toolPairs = groupPairs(tools);
 const languagePairs = groupPairs(languages);
 
-const Skills = () => (
-  <div id="skills">
-    <Grid className="scroll-module">
-      <h2 className="text-center">Skills</h2>
-      <Quote
-        quote="The problem with the world is that the intelligent people are full of doubts, while the stupid ones are full of confidence." // eslint-disable-line max-len
-        author="Charles Bukowski"
-      />
-      <hr />
-      <h3>Programming Languages</h3>
-      {programmingLanguagePairs.map(([pl1, pl2]) => <SkillPair key={`pl-${pl1.name}-${pl2.name}`} entry1={pl1} entry2={pl2} />)}
-      <hr />
-      <h3>Tools</h3>
-      {toolPairs.map(([tool1, tool2]) => <SkillPair key={`tool-${tool1.name}-${tool2.name}`} entry1={tool1} entry2={tool2} />)}
-      <hr />
-      <h3>Languages</h3>
-      {languagePairs.map(([language1, language2]) => <SkillPair key={`language-${language1.name}-${language2.name}`} entry1={language1} entry2={language2} />)}
-    </Grid>
-  </div>
-);
+function Skills() {
+  return (
+    <div id="skills">
+      <Grid className="scroll-module">
+        <h2 className="text-center">Skills</h2>
+        <Quote
+          quote="The problem with the world is that the intelligent people are full of doubts, while the stupid ones are full of confidence." // eslint-disable-line max-len
+          author="Charles Bukowski"
+        />
+        <hr />
+        <h3>Programming Languages</h3>
+        {programmingLanguagePairs.map(([pl1, pl2]) => <SkillPair key={`pl-${pl1.name}-${pl2.name}`} entry1={pl1} entry2={pl2} />)}
+        <hr />
+        <h3>Tools</h3>
+        {toolPairs.map(([tool1, tool2]) => <SkillPair key={`tool-${tool1.name}-${tool2.name}`} entry1={tool1} entry2={tool2} />)}
+        <hr />
+        <h3>Languages</h3>
+        {languagePairs.map(([language1, language2]) => <SkillPair key={`language-${language1.name}-${language2.name}`} entry1={language1} entry2={language2} />)}
+      </Grid>
+    </div>
+  );
+}
 
 export default Skills;

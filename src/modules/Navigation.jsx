@@ -78,21 +78,22 @@ export function smoothScroll(tabId) {
   });
 }
 
-const Navigation = () => (
-  <div id="navigation">
-    <Navbar inverse collapseOnSelect>
-      <Navbar.Header>
-        <div className="header-text">Richard Truong</div>
-        <Navbar.Toggle />
-      </Navbar.Header>
-      <Navbar.Collapse>
-        <Nav onSelect={smoothScroll}>
-          {tabs.map(tab =>
-            <NavItem key={`tab-${tab.id}`} eventKey={tab.id}>{tab.text}</NavItem>)}
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-  </div>
-);
+function Navigation() {
+  return (
+    <div id="navigation">
+      <Navbar inverse collapseOnSelect>
+        <Navbar.Header>
+          <div className="header-text">Richard Truong</div>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav onSelect={smoothScroll}>
+            {tabs.map((tab) => <NavItem key={`tab-${tab.id}`} eventKey={tab.id}>{tab.text}</NavItem>)}
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
+  );
+}
 
 export default Navigation;
