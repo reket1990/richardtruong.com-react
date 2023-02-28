@@ -18,5 +18,6 @@ module.exports = {
   ],
   rules: {
     'linebreak-style': 'off',
+    'react/jsx-filename-extension': 'warn',
   },
 };
