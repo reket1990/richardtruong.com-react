@@ -3,9 +3,15 @@ import { Grid } from 'react-bootstrap';
 import './Experiences.css';
 import Quote from './submodules/Quote';
 import Experience from './submodules/Experience';
+// Images for interests
+import muddIcon from '../images/icon-mudd.jpg';
+import honeyIcon from '../images/icon-honey.jpg';
+import whalerockIcon from '../images/icon-whalerock.jpg';
+import leafIcon from '../images/icon-leaf.jpg';
+import twoAIcon from '../images/icon-2a.jpg';
 
-// TODO: Make admin tool to modify experiences
 const educations = [{
+  icon: muddIcon,
   name: 'Harvey Mudd College',
   start_date: 'August 2008',
   end_date: 'May 2012',
@@ -16,6 +22,7 @@ const educations = [{
 }];
 
 const careers = [{
+  icon: honeyIcon,
   name: 'Honey',
   start_date: 'October 2017',
   end_date: 'Present',
@@ -25,6 +32,7 @@ const careers = [{
   website: 'https://www.joinhoney.com',
 },
 {
+  icon: whalerockIcon,
   name: 'Whalerock Industries',
   start_date: 'May 2016',
   end_date: 'April 2017',
@@ -37,6 +45,7 @@ const careers = [{
   website: 'http://www.whalerockindustries.com',
 },
 {
+  icon: leafIcon,
   name: 'Demand Media (now Leaf Group)',
   start_date: 'September 2014',
   end_date: 'May 2016',
@@ -49,6 +58,7 @@ const careers = [{
   website: 'https://www.leafgroup.com',
 },
 {
+  icon: twoAIcon,
   name: '2Advanced Studios / Bad Juju Games',
   start_date: 'June 2012',
   end_date: 'March 2014',
@@ -75,7 +85,7 @@ function Experiences() {
         <h3>Education</h3>
         {educations.map((education) => <Experience key={`education-${education.name}`} entry={education} />)}
         <hr />
-        <h3>Careers</h3>
+        <h3>Career</h3>
         {careers.map((career) => <Experience key={`career-${career.name}`} entry={career} />)}
       </Grid>
     </div>

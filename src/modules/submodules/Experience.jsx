@@ -6,6 +6,7 @@ function Experience({ entry }) {
   return (
     <Row className="experience">
       <Col md={4}>
+        <img className="icon" src={entry.icon} alt="Logo" />
         <h4>{entry.name}</h4>
         <p>
           {entry.start_date}
@@ -37,6 +38,7 @@ function Experience({ entry }) {
 
 Experience.propTypes = {
   entry: PropTypes.shape({
+    icon: PropTypes.string,
     name: PropTypes.string,
     start_date: PropTypes.string,
     end_date: PropTypes.string,

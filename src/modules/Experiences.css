@@ -9,6 +9,18 @@
   #experiences .experience {
     margin-bottom: 35px;
   }
+    #experiences .experience .icon {
+      float: left;
+      margin: 0 15px 0 0;
+      width: 46px;
+    }
+    @media (min-width: 768px) {
+      #experiences .experience .icon {
+        margin: 10px 20px 10px 0;
+      }
+    }
+
+
     #experiences .experience .title {
       font-weight: bold;
       margin-top: 10px;
