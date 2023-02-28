@@ -58,7 +58,7 @@ const careers = [{
     + '• Implemented and maintained server backend and its functions for Tekken Tag Tournament 2, Ace Combat, Flip Riders and other games (Python, Redis, Cassandra)\n'
     + '• Created backend services for Designer Con 2012 App (PHP, MySQL)',
   location: 'Aliso Viejo, CA',
-  website: 'http://www.badjuju.com',
+  website: 'https://www.crunchbase.com/organization/bad-juju-games',
 }];
 
 function Experiences() {

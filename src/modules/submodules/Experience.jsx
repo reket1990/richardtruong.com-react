@@ -16,7 +16,7 @@ function Experience({ entry }) {
         </p>
       </Col>
       <Col md={8}>
-        <p><strong>{entry.title}</strong></p>
+        <p className="title">{entry.title}</p>
         <p className="description">{entry.description}</p>
         <div className="details">
           <span className="detail">

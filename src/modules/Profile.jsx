@@ -14,7 +14,7 @@ function Profile() {
       <Grid className="scroll-module">
         <h2 className="text-center">Profile</h2>
         <Quote
-          quote="The person that you will spend the most time with in life is yourself, so it's best to try to make yourself as interesting as possible."
+          quote="The person that you will spend the most time with in life is yourself, so it's best to make yourself as interesting as possible."
         />
         <hr />
         <Row>
@@ -50,7 +50,7 @@ function Profile() {
             <p>
               <strong>Location:</strong>
               <br />
-              California, United States
+              Los Angeles, California, United States
             </p>
           </Col>
         </Row>

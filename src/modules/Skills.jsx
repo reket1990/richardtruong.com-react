@@ -13,9 +13,6 @@ const programmingLanguages = [{
 }, {
   name: 'Python',
   value: 4,
-}, {
-  name: 'PHP',
-  value: 5,
 }];
 
 const tools = [{

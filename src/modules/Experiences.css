@@ -9,6 +9,11 @@
   #experiences .experience {
     margin-bottom: 35px;
   }
+    #experiences .experience .title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
     #experiences .experience .description {
       white-space: pre-line;
     }
