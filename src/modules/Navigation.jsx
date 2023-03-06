@@ -21,7 +21,6 @@ const tabs = [{
   text: 'Contact',
 }];
 
-
 export function smoothScroll(tabId) {
   let scrollHeight = document.getElementById(tabId).offsetTop;
   if (window.innerWidth < 768) {
@@ -80,7 +79,7 @@ class Navigation extends React.Component {
       // Add active
       tabElements[active].classList.add('active');
     };
-  };
+  }
 
   render() {
     return (

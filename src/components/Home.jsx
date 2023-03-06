@@ -22,7 +22,7 @@ function Home() {
           <hr />
           <p>Interactive Resume</p>
         </Grid>
-        <button onClick={scrollDown} className="scroll-down">
+        <button type="button" onClick={scrollDown} className="scroll-down">
           <span className="glyphicon glyphicon-chevron-down" />
         </button>
       </Jumbotron>
