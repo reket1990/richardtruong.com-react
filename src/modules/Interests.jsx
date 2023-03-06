@@ -53,7 +53,7 @@ function Interests() {
               <Row key={`interest-${interest.name}`} className="interest-row">
                 <Col sm={4} md={3}>
                   <div className="interest-image-container">
-                    <img className="interest-image" src={interest.image} alt="{interest.name}" />
+                    <img className="interest-image" src={interest.image} alt={interest.name} />
                     <div className="interest-image-background" style={interest.style} />
                   </div>
                 </Col>
@@ -79,7 +79,7 @@ function Interests() {
               </Col>
               <Col sm={4} md={3} className="hidden-xs">
                 <div className="interest-image-container">
-                  <img className="interest-image" src={interest.image} alt="{interest.name}" />
+                  <img className="interest-image" src={interest.image} alt={interest.name} />
                   <div className="interest-image-background" style={interest.style} />
                 </div>
               </Col>
