@@ -69,7 +69,7 @@ function Interests() {
             <Row key={`interest-${interest.name}`} className="interest-row">
               <Col sm={4} md={3} className="visible-xs-block">
                 <div className="interest-image-container">
-                  <img className="interest-image" src={interest.image} alt="{interest.name}" />
+                  <img className="interest-image" src={interest.image} alt={interest.name} />
                   <div className="interest-image-background" style={interest.style} />
                 </div>
               </Col>
